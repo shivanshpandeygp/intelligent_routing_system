@@ -388,7 +388,7 @@ If you use this project in academic research, please cite:
 M.Tech Computer Science  
 Madan Mohan Malaviya University of Technology, Gorakhpur
 
-- 📧 Email: sdutt081@gmail.com
+📧 Email: sdutt081@gmail.com
 
 **Project Link:** [https://github.com/shivanshpandeygp/intelligent_routing_system](https://github.com/shivanshpandeygp/intelligent_routing_system)
 
