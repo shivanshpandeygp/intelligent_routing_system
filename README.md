@@ -62,6 +62,7 @@ cd intelligent-routing-system
 ### Install Dependencies
 
 #### Using requirements.txt
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -77,6 +78,7 @@ streamlit run frontend/app.py
 ```
 
 Or on Windows:
+
 ```bash
 run_project.bat
 ```
@@ -87,22 +89,22 @@ Navigate to: [**http://localhost:8501**](http://localhost:8501)
 
 ### 3. Create a Network
 
-1. Go to **"📊 Network Setup"** tab  
-2. Choose topology (Mesh/Ring/Tree/Random)  
-3. Set number of nodes (5-20)  
+1. Go to **"📊 Network Setup"** tab
+2. Choose topology (Mesh/Ring/Tree/Random)
+3. Set number of nodes (5-20)
 4. Click **"🔨 Create Network"**
 
 ### 4. Train Models
 
-1. Go to **"🤖 Train Models"** tab  
-2. Select source and destination nodes  
-3. Click **"Train Q-Learning"** or **"Train DQN"**  
+1. Go to **"🤖 Train Models"** tab
+2. Select source and destination nodes
+3. Click **"Train Q-Learning"** or **"Train DQN"**
 4. Wait for training to complete
 
 ### 5. Discover Routes
 
-1. Go to **"🔍 Route Discovery"** tab  
-2. Select algorithms to compare  
+1. Go to **"🔍 Route Discovery"** tab
+2. Select algorithms to compare
 3. View paths, costs, and visualizations
 
 ---
@@ -195,7 +197,6 @@ path, cost, time = dqn_agent.find_path(0, 9)
 print(f"DQN: {path}, Cost: {cost:.2f}")
 ```
 
-
 ---
 
 ## 🧠 Algorithms
@@ -203,6 +204,7 @@ print(f"DQN: {path}, Cost: {cost:.2f}")
 ### Traditional Algorithms
 
 1. **Dijkstra's Algorithm**
+
    - Optimal shortest path
    - Time Complexity: O((V + E) log V)
    - Use case: Static networks with non-negative weights
@@ -215,6 +217,7 @@ print(f"DQN: {path}, Cost: {cost:.2f}")
 ### Reinforcement Learning Algorithms
 
 3. **Q-Learning**
+
    - Model-free tabular RL
    - Learns state-action Q-values
    - Use case: Small to medium networks
@@ -239,41 +242,45 @@ print(f"DQN: {path}, Cost: {cost:.2f}")
 
 ### Metrics Evaluated
 
-| Metric | Description | Unit |
-|--------|-------------|------|
-| **Path Cost** | Sum of edge weights | Numeric |
-| **Computation Time** | Algorithm execution time | Milliseconds |
-| **Latency** | End-to-end delay | Milliseconds |
-| **Energy Consumption** | Power usage estimate | Energy units |
-| **Hop Count** | Number of intermediate nodes | Integer |
-| **Success Rate** | Route discovery success | Percentage |
+| Metric                 | Description                  | Unit         |
+| ---------------------- | ---------------------------- | ------------ |
+| **Path Cost**          | Sum of edge weights          | Numeric      |
+| **Computation Time**   | Algorithm execution time     | Milliseconds |
+| **Latency**            | End-to-end delay             | Milliseconds |
+| **Energy Consumption** | Power usage estimate         | Energy units |
+| **Hop Count**          | Number of intermediate nodes | Integer      |
+| **Success Rate**       | Route discovery success      | Percentage   |
 
 ### Experimental Results
 
 **10-Node Mesh Network (Source: 0, Destination: 9)**
 
-| Algorithm | Path Cost | Time (ms) | Success Rate |
-|-----------|-----------|-----------|--------------|
-| Dijkstra | 18.0 | 0.01 | 100% |
-| Bellman-Ford | 18.0 | 0.02 | 100% |
-| Q-Learning | 18.5 | 0.15 | 95% |
-| DQN | 20.2 | 2.50 | 85% |
+| Algorithm    | Path Cost | Time (ms) | Success Rate |
+| ------------ | --------- | --------- | ------------ |
+| Dijkstra     | 18.0      | 0.01      | 100%         |
+| Bellman-Ford | 18.0      | 0.02      | 100%         |
+| Q-Learning   | 18.5      | 0.15      | 95%          |
+| DQN          | 20.2      | 2.50      | 85%          |
 
 ---
 
 ## 📸 Screenshots
 
 ### Network Setup
+
 ![Network Setup](docs/images/network_setup.png)
 ![Network Setup](docs/images/network_setup1.png)
 
 ### Training Interface
+
 ![Training](docs/images/training.png)
 
 ### Route Discovery
+
 ![Route Discovery](docs/images/route_discovery.png)
 
 ### Performance Dashboard
+
 ![Dashboard](docs/images/dashboard.png)
 
 ---
@@ -283,6 +290,7 @@ print(f"DQN: {path}, Cost: {cost:.2f}")
 ### Problem Statement
 
 Traditional routing algorithms (Dijkstra, Bellman-Ford) are optimal for static networks but struggle with:
+
 - Dynamic topology changes
 - Multi-objective optimization
 - Real-time adaptation
@@ -323,7 +331,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - DQN requires more episodes for convergence than Q-Learning
 - Network visualization slow for >50 nodes
 
-See [Issues](https://github.com/YOUR_USERNAME/intelligent-routing-system/issues) for more.
+See [Issues](https://github.com/shivanshpandeygp/intelligent-routing-system/issues) for more.
 
 ---
 
@@ -340,9 +348,9 @@ See [Issues](https://github.com/YOUR_USERNAME/intelligent-routing-system/issues)
 
 ## 📚 References
 
-1. Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction*. MIT Press.
-2. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518(7540), 529-533.
-3. Tanenbaum, A. S., & Wetherall, D. J. (2011). *Computer Networks*. Prentice Hall.
+1. Sutton, R. S., & Barto, A. G. (2018). _Reinforcement Learning: An Introduction_. MIT Press.
+2. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. _Nature_, 518(7540), 529-533.
+3. Tanenbaum, A. S., & Wetherall, D. J. (2011). _Computer Networks_. Prentice Hall.
 
 ---
 
@@ -355,7 +363,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ## 🎓 Academic Use
 
 If you use this project in academic research, please cite:
-
 
 ---
 
@@ -396,4 +403,3 @@ Madan Mohan Malaviya University of Technology, Gorakhpur
 If you find this project helpful, please ⭐ star the repository!
 
 </div>
-
