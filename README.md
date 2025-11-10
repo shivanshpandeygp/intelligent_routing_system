@@ -124,20 +124,34 @@ intelligent_routing_system/
 │   └── performance_metrics.py # Metric calculations
 │
 ├── frontend/
+|   ├── __init__.py
 │   ├── app.py                 # Main Streamlit application
 │   ├── visualizer.py          # Network visualization
 │   └── dashboard.py           # Performance dashboard
-│
+├── benchmark/
+│   ├── __init__.py
+│   ├── benchmark_runner.py
+│   └── topology_generator.py
+|
 ├── models/
 │   ├── pretrained/            # Global pre-trained models
 │   └── network_specific/      # Network-specific models
 │
 ├── docs/
-│   ├── images/                # Documentation images
-│   ├── SETUP.md               # Detailed setup guide
-│   ├── USAGE.md               # Usage examples
-│   └── ARCHITECTURE.md        # System architecture
-│
+│   └── images/                # Documentation images
+│       ├── dashboard.png
+│       ├── network_setup.png
+│       ├── network_setup1.png
+|       ├── route_discovery.png
+│       └── training.png
+|
+├── test/
+|   ├── __init__.py
+│   ├── test_dqn.py
+│   ├── test_graph_manager.py
+|   ├── test_q_learning.py
+│   └── test_traditional.py
+|
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
 ├── LICENSE                    # MIT License
@@ -385,12 +399,6 @@ Madan Mohan Malaviya University of Technology, Gorakhpur
 - **PyTorch** and **Streamlit** communities
 - **NetworkX** library developers
 - All open-source contributors
-
----
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=shivanshpandeygp/intelligent_routing_system&type=Date)](https://star-history.com/#shivanshpandeygp/intelligent_routing_system&Date)
 
 ---
 
