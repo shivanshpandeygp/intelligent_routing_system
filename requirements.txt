@@ -1,0 +1,23 @@
+# Core dependencies
+numpy>=1.24.0
+networkx>=3.0
+torch>=2.0.0
+pandas>=2.0.0
+
+# Visualization
+plotly>=5.14.0
+matplotlib>=3.7.0
+
+# Web framework
+streamlit>=1.28.0
+
+# PDF generation
+reportlab>=4.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Utilities
+scikit-learn>=1.3.0
+tqdm>=4.65.0

@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Trained Models (comment out if you want to include them)
+models/pretrained/*.pkl
+models/pretrained/*.pt
+models/network_specific/*.pkl
+models/network_specific/*.pt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Data files (if any)
+data/
+*.csv
+*.xlsx
+
+# Documentation build
+docs/_build/
+site/
