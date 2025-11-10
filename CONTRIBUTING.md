@@ -41,8 +41,7 @@ Create an issue and include as many details as possible:
 
 **Bug Report Template:**
 
-markdown
-**Bug Description**
+**Bug Description<br>**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
