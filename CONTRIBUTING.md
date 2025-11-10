@@ -74,12 +74,11 @@ Add any other context about the problem here.
 Paste relevant error logs here
 
 ```
-
+undefined
 ```
 
 #### Example Bug Report
 
-```markdown
 **Bug Description**
 DQN training crashes with "CUDA out of memory" error on large networks.
 
@@ -100,7 +99,6 @@ Training should complete without memory errors.
 - GPU: NVIDIA RTX 3060 (12GB)
 
 **Logs**
-```
 
 RuntimeError: CUDA out of memory. Tried to allocate 2.50 GiB
 
