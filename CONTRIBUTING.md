@@ -765,6 +765,8 @@ If you have questions, you can:
 
 When you submit a PR, use this template:
 
+'''markov
+
 ## Description
 
 Brief description of changes
@@ -800,6 +802,7 @@ Add screenshots for UI changes.
 ## Related Issues
 
 Closes #(issue number)
+'''
 
 ---
 
