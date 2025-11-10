@@ -331,7 +331,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - DQN requires more episodes for convergence than Q-Learning
 - Network visualization slow for >50 nodes
 
-See [Issues](https://github.com/shivanshpandeygp/intelligent-routing-system/issues) for more.
+See [Issues](https://github.com/shivanshpandeygp/intelligent_routing_system/issues) for more.
 
 ---
 
