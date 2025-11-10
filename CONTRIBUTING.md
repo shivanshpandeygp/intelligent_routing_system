@@ -121,7 +121,7 @@ Any alternative solutions or features you've considered.
 **Additional context<br>**
 Any other context or screenshots about the feature request.
 
-**Proposed Implementation<br>** (Optional)
+**Proposed Implementation** (Optional)<br>
 If you have ideas on how to implement this, share them here.
 
 #### Example Enhancement Request
@@ -184,6 +184,7 @@ Follow these steps for a smooth PR process:
 
 **PR Checklist:**
 
+```text
 ## Pull Request Checklist
 
 - [ ] Code follows project style guidelines
@@ -195,6 +196,7 @@ Follow these steps for a smooth PR process:
 - [ ] No merge conflicts with main branch
 - [ ] Commit messages follow guidelines
 - [ ] Screenshots added (for UI changes)
+```
 
 ---
 
@@ -282,7 +284,7 @@ We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) with these modifica
 
 Use **Black** for automatic formatting:
 
-```
+```bash
 # Format all files
 
 black backend/ frontend/
