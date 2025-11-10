@@ -212,38 +212,38 @@ Follow these steps for a smooth PR process:
 
 ### Setup Steps
 
-# 1. Fork and clone the repository
+### 1. Fork and clone the repository
 
 git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git
 cd intelligent_routing_system
 
-# 2. Create virtual environment
+### 2. Create virtual environment
 
 python -m venv .venv
 
-# 3. Activate virtual environment
+### 3. Activate virtual environment
 
-# Windows:
+### Windows:
 
 .venv\Scripts\activate
 
-# Linux/Mac:
+### Linux/Mac:
 
 source .venv/bin/activate
 
-# 4. Install dependencies
+### 4. Install dependencies
 
 pip install -r requirements.txt
 
-# 5. Install development dependencies
+### 5. Install development dependencies
 
 pip install pytest pytest-cov black flake8 mypy
 
-# 6. Run tests to verify setup
+### 6. Run tests to verify setup
 
 pytest tests/
 
-# 7. Run the application
+### 7. Run the application
 
 streamlit run frontend/app.py
 
