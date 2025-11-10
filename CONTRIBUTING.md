@@ -15,7 +15,7 @@ This document provides guidelines for contributing to the Intelligent RL-Based R
 - [Testing Guidelines](#-testing-guidelines)
 - [Commit Guidelines](#-commit-guidelines)
 - [Documentation](#-documentation)
-- [Community](#-community)
+- [Contact](#-contact)
 
 ---
 
@@ -212,7 +212,7 @@ Follow these steps for a smooth PR process:
 
 ### 1. Fork and clone the repository
 
-git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git
+git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git<br>
 cd intelligent_routing_system
 
 ### 2. Create virtual environment
