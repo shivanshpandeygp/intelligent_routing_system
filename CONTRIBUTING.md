@@ -282,29 +282,31 @@ We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) with these modifica
 
 Use **Black** for automatic formatting:
 
-### Format all files
+```
+# Format all files
 
 black backend/ frontend/
 
-### Check formatting without changes
+# Check formatting without changes
 
 black --check backend/ frontend/
 
-### Format specific file
+# Format specific file
 
 black backend/dqn_routing.py
+```
 
 ### Linting
 
 Use **Flake8** for style checking:
 
-### Check all files
-
+```bash
+# Check all files
 flake8 backend/ frontend/ --max-line-length=100
 
-### Check specific file
-
+# Check specific file
 flake8 backend/dqn_routing.py
+```
 
 Ignore these errors (add to `.flake8`):
 
