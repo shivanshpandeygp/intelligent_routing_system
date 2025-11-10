@@ -10,10 +10,6 @@ This document provides guidelines for contributing to the Intelligent RL-Based R
 
 - [Code of Conduct](#-code-of-conduct)
 - [How Can I Contribute?](#-how-can-i-contribute)
-  - [Reporting Bugs](#-reporting-bugs)
-  - [Suggesting Enhancements](#-suggesting-enhancements)
-  - [Your First Code Contribution](#-your-first-code-contribution)
-  - [Pull Requests](#-pull-requests)
 - [Development Setup](#-development-setup)
 - [Coding Standards](#-coding-standards)
 - [Testing Guidelines](#-testing-guidelines)
@@ -223,11 +219,11 @@ python -m venv .venv
 
 ### 3. Activate virtual environment
 
-### Windows:
+#### Windows:
 
 .venv\Scripts\activate
 
-### Linux/Mac:
+#### Linux/Mac:
 
 source .venv/bin/activate
 
@@ -286,15 +282,15 @@ We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) with these modifica
 
 Use **Black** for automatic formatting:
 
-# Format all files
+### Format all files
 
 black backend/ frontend/
 
-# Check formatting without changes
+### Check formatting without changes
 
 black --check backend/ frontend/
 
-# Format specific file
+### Format specific file
 
 black backend/dqn_routing.py
 
@@ -302,11 +298,11 @@ black backend/dqn_routing.py
 
 Use **Flake8** for style checking:
 
-# Check all files
+### Check all files
 
 flake8 backend/ frontend/ --max-line-length=100
 
-# Check specific file
+### Check specific file
 
 flake8 backend/dqn_routing.py
 
