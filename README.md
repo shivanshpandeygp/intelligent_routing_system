@@ -152,12 +152,14 @@ intelligent_routing_system/
 |   ├── test_q_learning.py
 │   └── test_traditional.py
 |
+├── __init__.py
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
 ├── LICENSE                    # MIT License
 ├── .gitignore                 # Git ignore rules
 ├── CONTRIBUTING.md            # Contribution guidelines
-└── CODE_OF_CONDUCT.md         # Code of conduct
+├── CODE_OF_CONDUCT.md         # code of conduct
+└── run_project.bat            # run the project
 ```
 
 ---
