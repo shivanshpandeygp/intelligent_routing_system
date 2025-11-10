@@ -55,8 +55,8 @@ An intelligent packet routing system that uses **Reinforcement Learning** (Q-Lea
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/intelligent-routing-system.git
-cd intelligent-routing-system
+git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git
+cd intelligent_routing_system
 ```
 
 ### Install Dependencies
@@ -368,22 +368,20 @@ If you use this project in academic research, please cite:
 
 ## 📧 Contact
 
-**Your Name**  
+**Shivansh Pandey**  
 M.Tech Computer Science  
 Madan Mohan Malaviya University of Technology, Gorakhpur
 
-- 📧 Email: your.email@example.com
-- 🔗 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- 📧 Email: sdutt081@gmail.com
 
-**Project Link:** [https://github.com/YOUR_USERNAME/intelligent-routing-system](https://github.com/YOUR_USERNAME/intelligent-routing-system)
+**Project Link:** [https://github.com/shivanshpandeygp/intelligent_routing_system](https://github.com/shivanshpandeygp/intelligent_routing_system)
 
 ---
 
 ## 🙏 Acknowledgments
 
 - **MMMUT Gorakhpur** for academic support
-- **Project Guide:** [Guide Name], Department of Computer Science
+- **Project Guide:** [Dr. Vimal Kumar], Department of Computer Science
 - **PyTorch** and **Streamlit** communities
 - **NetworkX** library developers
 - All open-source contributors
@@ -392,7 +390,7 @@ Madan Mohan Malaviya University of Technology, Gorakhpur
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USERNAME/intelligent-routing-system&type=Date)](https://star-history.com/#YOUR_USERNAME/intelligent-routing-system&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=shivanshpandeygp/intelligent_routing_system&type=Date)](https://star-history.com/#shivanshpandeygp/intelligent_routing_system&Date)
 
 ---
 
