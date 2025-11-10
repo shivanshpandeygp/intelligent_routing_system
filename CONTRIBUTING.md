@@ -8,18 +8,18 @@ This document provides guidelines for contributing to the Intelligent RL-Based R
 
 ## 📋 Table of Contents
 
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-  - [Reporting Bugs](#reporting-bugs)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-  - [Your First Code Contribution](#your-first-code-contribution)
-  - [Pull Requests](#pull-requests)
-- [Development Setup](#development-setup)
-- [Coding Standards](#coding-standards)
-- [Testing Guidelines](#testing-guidelines)
-- [Commit Guidelines](#commit-guidelines)
-- [Documentation](#documentation)
-- [Community](#community)
+- [Code of Conduct](#-code-of-conduct)
+- [How Can I Contribute?](#-how-can-i-contribute)
+  - [Reporting Bugs](#-reporting-bugs)
+  - [Suggesting Enhancements](#-suggesting-enhancements)
+  - [Your First Code Contribution](#-your-first-code-contribution)
+  - [Pull Requests](#-pull-requests)
+- [Development Setup](#-development-setup)
+- [Coding Standards](#-coding-standards)
+- [Testing Guidelines](#-testing-guidelines)
+- [Commit Guidelines](#-commit-guidelines)
+- [Documentation](#-documentation)
+- [Community](#-community)
 
 ---
 
@@ -44,7 +44,7 @@ Create an issue and include as many details as possible:
 **Bug Description<br>**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+**To Reproduce<br>**
 Steps to reproduce the behavior:
 
 1. Go to '...'
@@ -52,10 +52,10 @@ Steps to reproduce the behavior:
 3. Scroll down to '...'
 4. See error
 
-**Expected Behavior**
+**Expected Behavior<br>**
 A clear description of what you expected to happen.
 
-**Screenshots**
+**Screenshots<br>**
 If applicable, add screenshots to help explain your problem.
 
 **Environment:**
@@ -65,10 +65,10 @@ If applicable, add screenshots to help explain your problem.
 - PyTorch Version: [e.g., 2.0.1]
 - Streamlit Version: [e.g., 1.28.0]
 
-**Additional Context**
+**Additional Context<br>**
 Add any other context about the problem here.
 
-**Logs**
+**Logs<br>**
 
 Paste relevant error logs here
 
@@ -78,7 +78,7 @@ undefined
 
 #### Example Bug Report
 
-**Bug Description**
+**Bug Description<br>**
 DQN training crashes with "CUDA out of memory" error on large networks.
 
 **To Reproduce**
@@ -87,7 +87,7 @@ DQN training crashes with "CUDA out of memory" error on large networks.
 2. Start DQN training with 5000 episodes
 3. Error occurs after ~500 episodes
 
-**Expected Behavior**
+**Expected Behavior<br>**
 Training should complete without memory errors.
 
 **Environment:**
@@ -102,7 +102,7 @@ Training should complete without memory errors.
 RuntimeError: CUDA out of memory. Tried to allocate 2.50 GiB
 
 ```
-
+undefined
 ```
 
 ---
@@ -113,49 +113,45 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 
 **Enhancement Template:**
 
-```markdown
-**Is your feature request related to a problem?**
+**Is your feature request related to a problem?<br>**
 A clear description of the problem. Ex. I'm always frustrated when [...]
 
-**Describe the solution you'd like**
+**Describe the solution you'd like<br>**
 A clear description of what you want to happen.
 
-**Describe alternatives you've considered**
+**Describe alternatives you've considered<br>**
 Any alternative solutions or features you've considered.
 
-**Additional context**
+**Additional context<br>**
 Any other context or screenshots about the feature request.
 
-**Proposed Implementation** (Optional)
+**Proposed Implementation<br>** (Optional)
 If you have ideas on how to implement this, share them here.
-```
 
 #### Example Enhancement Request
 
-```markdown
-**Feature Request: Add A3C Algorithm**
+**Feature Request: Add A3C Algorithm<br>**
 
-**Is your feature request related to a problem?**
+**Is your feature request related to a problem?<br>**
 Current RL algorithms (Q-Learning, DQN) don't support parallel training on multi-core CPUs.
 
-**Describe the solution you'd like**
+**Describe the solution you'd like<br>**
 Implement Asynchronous Advantage Actor-Critic (A3C) algorithm for:
 
 - Faster training on multi-core systems
 - Better exploration through parallel agents
 - Improved convergence
 
-**Proposed Implementation**
+**Proposed Implementation<br>**
 
 1. Create `a3c_routing.py` in backend/
 2. Add threading support
 3. Update UI to show parallel agent progress
 4. Add documentation and tests
 
-**References**
+**References<br>**
 
 - Mnih et al. (2016) - Asynchronous Methods for Deep RL
-```
 
 ---
 
@@ -192,7 +188,6 @@ Follow these steps for a smooth PR process:
 
 **PR Checklist:**
 
-```markdown
 ## Pull Request Checklist
 
 - [ ] Code follows project style guidelines
@@ -204,7 +199,6 @@ Follow these steps for a smooth PR process:
 - [ ] No merge conflicts with main branch
 - [ ] Commit messages follow guidelines
 - [ ] Screenshots added (for UI changes)
-```
 
 ---
 
@@ -218,32 +212,40 @@ Follow these steps for a smooth PR process:
 
 ### Setup Steps
 
-```bash
 # 1. Fork and clone the repository
+
 git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git
 cd intelligent_routing_system
 
 # 2. Create virtual environment
+
 python -m venv .venv
 
 # 3. Activate virtual environment
+
 # Windows:
+
 .venv\Scripts\activate
+
 # Linux/Mac:
+
 source .venv/bin/activate
 
 # 4. Install dependencies
+
 pip install -r requirements.txt
 
 # 5. Install development dependencies
+
 pip install pytest pytest-cov black flake8 mypy
 
 # 6. Run tests to verify setup
+
 pytest tests/
 
 # 7. Run the application
+
 streamlit run frontend/app.py
-```
 
 ### Project Structure
 
@@ -284,28 +286,29 @@ We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) with these modifica
 
 Use **Black** for automatic formatting:
 
-```bash
 # Format all files
+
 black backend/ frontend/
 
 # Check formatting without changes
+
 black --check backend/ frontend/
 
 # Format specific file
+
 black backend/dqn_routing.py
-```
 
 ### Linting
 
 Use **Flake8** for style checking:
 
-```bash
 # Check all files
+
 flake8 backend/ frontend/ --max-line-length=100
 
 # Check specific file
+
 flake8 backend/dqn_routing.py
-```
 
 Ignore these errors (add to `.flake8`):
 
@@ -756,7 +759,7 @@ Maintainers follow this process:
 If you have questions, you can:
 
 - 💬 Open a [Discussion](https://github.com/shivanshpandeygp/intelligent_routing_system/discussions)
-- 📧 Email maintainers: [your.email@example.com]
+- 📧 Email maintainers: [sdutt081@gmail.com]
 - 🐛 Check existing [Issues](https://github.com/shivanshpandeygp/intelligent_routing_system/issues)
 - 📖 Read the [documentation](docs/)
 
@@ -766,7 +769,6 @@ If you have questions, you can:
 
 When you submit a PR, use this template:
 
-```markdown
 ## Description
 
 Brief description of changes
@@ -802,7 +804,6 @@ Add screenshots for UI changes.
 ## Related Issues
 
 Closes #(issue number)
-```
 
 ---
 
