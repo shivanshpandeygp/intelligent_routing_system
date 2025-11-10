@@ -1,11 +1,9 @@
 ---
-
 # Contributing to Intelligent RL-Based Routing System
 
 First off, **thank you** for considering contributing to this project! 🎉
 
 This document provides guidelines for contributing to the Intelligent RL-Based Routing System. Following these guidelines helps maintain code quality and makes it easier for maintainers to review and merge your contributions.
-
 ---
 
 ## 📋 Table of Contents
@@ -43,7 +41,7 @@ Create an issue and include as many details as possible:
 
 **Bug Report Template:**
 
-```markdown
+markdown
 **Bug Description**
 A clear and concise description of what the bug is.
 
@@ -72,7 +70,6 @@ If applicable, add screenshots to help explain your problem.
 Add any other context about the problem here.
 
 **Logs**
-```
 
 Paste relevant error logs here
 
