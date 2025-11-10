@@ -1,5 +1,4 @@
 ---
-
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -7,7 +6,6 @@
 We as members, contributors, and leaders pledge to make participation in the **Intelligent RL-Based Routing System** community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
 
 We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
-
 ---
 
 ## Our Standards
@@ -205,7 +203,7 @@ Madan Mohan Malaviya University of Technology, Gorakhpur
 
 **Email:** [sdutt081@gmail.com]  
 **GitHub:** [@shivanshpandeygp](https://github.com/shivanshpandeygp)  
-**Project Repository:** [intelligent-routing-system](https://github.com/shivanshpandeygp/intelligent_routing_system)
+**Project Repository:** [intelligent_routing_system](https://github.com/shivanshpandeygp/intelligent_routing_system)
 
 ---
 
