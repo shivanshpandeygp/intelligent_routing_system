@@ -352,6 +352,13 @@ def network_setup_page():
         # Add new edge
         st.markdown("**➕ Add New Edge**")
 
+        add_reverse = st.checkbox(
+            "Add reverse edge automatically (bidirectional)",
+            value=True,
+            help="Automatically add edge in opposite direction with same weight",
+            key="bidirectional_checkbox"
+        )
+
         col1, col2, col3, col4 = st.columns([2, 2, 2, 1])
 
         with col1:
@@ -388,28 +395,46 @@ def network_setup_page():
             if st.button("➕ Add", key="add_edge_btn"):
                 if edge_source == edge_dest:
                     st.error("❌ Source and destination cannot be the same!")
-                elif any(e[0] == edge_source and e[1] == edge_dest
-                         for e in st.session_state.custom_edges):
-                    st.warning("⚠️ Edge already exists!")
                 else:
-                    st.session_state.custom_edges.append((edge_source, edge_dest, edge_weight))
-                    st.success(f"✅ Added edge: {edge_source} → {edge_dest} (weight: {edge_weight})")
-                    st.rerun()
+                    edges_added = []
 
-        # Bidirectional edge option
-        col1, col2 = st.columns([3, 1])
-        with col1:
-            add_reverse = st.checkbox(
-                "🔄 Add reverse edge automatically (bidirectional)",
-                value=True,
-                help="Automatically add edge in opposite direction with same weight"
-            )
+                    # Check if forward edge exists
+                    forward_exists = any(
+                        e[0] == edge_source and e[1] == edge_dest
+                        for e in st.session_state.custom_edges
+                    )
 
-        if add_reverse and col4:
-            st.info("💡 Reverse edge will be added automatically")
+                    # Add forward edge if not exists
+                    if not forward_exists:
+                        st.session_state.custom_edges.append((edge_source, edge_dest, edge_weight))
+                        edges_added.append(f"{edge_source} → {edge_dest}")
+
+                    # Add reverse edge if bidirectional is checked
+                    if add_reverse:
+                        reverse_exists = any(
+                            e[0] == edge_dest and e[1] == edge_source
+                            for e in st.session_state.custom_edges
+                        )
+                        if not reverse_exists:
+                            st.session_state.custom_edges.append((edge_dest, edge_source, edge_weight))
+                            edges_added.append(f"{edge_dest} → {edge_source}")
+
+                    # Show result
+                    if edges_added:
+                        st.success(f"✅ Added edge(s): {', '.join(edges_added)} (weight: {edge_weight})")
+                        st.rerun()
+                    else:
+                        st.warning("⚠️ Edge(s) already exist!")
+
+        # Show info about current mode
+        if add_reverse:
+            st.caption("🔄 Bidirectional mode ON: Both A→B and B→A will be added")
+        else:
+            st.caption("➡️ Unidirectional mode: Only A→B will be added")
+
+        st.markdown("---")
 
         # Quick actions
-        st.markdown("---")
         st.markdown("**⚡ Quick Actions**")
 
         col1, col2, col3, col4 = st.columns(4)
