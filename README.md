@@ -48,15 +48,27 @@ An intelligent packet routing system that uses **Reinforcement Learning** (Q-Lea
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- pip package manager
 - Git (for cloning)
+- Python 3.11
+- pip package manager
 
 ### Clone Repository
 
 ```bash
 git clone https://github.com/shivanshpandeygp/intelligent_routing_system.git
 cd intelligent_routing_system
+```
+
+### Set Up Virtual Enviroment
+
+```bash
+python -m venv env
+```
+
+#### Activate Virtual Enviroment
+
+```bash
+env\scripts\activate.ps1
 ```
 
 ### Install Dependencies
