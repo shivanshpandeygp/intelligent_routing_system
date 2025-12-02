@@ -68,7 +68,7 @@ python -m venv env
 #### Activate Virtual Enviroment
 
 ```bash
-env\scripts\activate.ps1
+.\env\scripts\Activate.ps1
 ```
 
 ### Install Dependencies
