@@ -31,10 +31,10 @@ MANIFEST
 *.ckpt
 
 # Trained Models (comment out if you want to include them)
-models/pretrained/*.pkl
-models/pretrained/*.pt
-models/network_specific/*.pkl
-models/network_specific/*.pt
+#models/pretrained/*.pkl
+#models/pretrained/*.pt
+#models/network_specific/*.pkl
+#models/network_specific/*.pt
 
 # Jupyter Notebook
 .ipynb_checkpoints
